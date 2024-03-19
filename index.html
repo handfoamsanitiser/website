@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Big Brain Small Budget</title>
+		<title>Patryk's Site</title>
+	<!-- css -->
+	<style type="text/css">
+
+		h1{
+			text-align:center ;
+			color:white ;
+			background-color:cornflowerblue ;
+		}
+		h2{
+			text-align:center ;
+			color:white ;
+			background-color:cornflowerblue ;
+
+		}
+		h3{
+			text-align:center ;
+			color:white ;
+			background-color:cornflowerblue ;
+			}
+		
+		#myImage {
+  			display: block;
+  			margin-left: auto;
+ 		 	margin-right: auto;		
+			 width: 50%;
+	</style>
+</head>
+<body>
+<h1>Welcome to Big Brain Small Budget
+</h1>
+<br>
+<h2>We are the leading supplier in free systems for your home.
+</h2>
+<h3>OUR PRODUCTS!</h3>
+<img id="myImage" onclick="swap_image()" src="ad1.png">
+<button onclick="document.getElementById('myImage').src='ad1.png'">Nice toaster</button>
+<button onclick="document.getElementById('myImage').src='ad2.png'">Bad toaster</button>
+
+
+<!-- JS -->
+<script type="text/javascript">
+	var img_state = 1;
+
+	function swap_image() {
+		if (img_state == 1){
+		document.getElementById("img").src = "https://www.smeg.com/binaries/content/gallery/smeg/categories/tsf02crus_2-_web.jpg/tsf02crus_2-_web.jpg/brx%3AsquareMobile";
+		img_state = 0;
+
+	}
+	else{
+		document.getElementById("img1").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Boeing_737-400_Centralwings.JPG/800px-Boeing_737-400_Centralwings.JPG?20220202162821";
+		img_state = 1;
+
+</body>
+</html>
