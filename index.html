@@ -47,17 +47,16 @@
 
 <!-- JS -->
 <script type="text/javascript">
-	var img_state = 1;
+	    // Function to play the bad toaster sound
+    function playBadToasterSound() {
+        // Create an Audio object for the sound
+        var badToasterSound = new Audio('path/to/bad_toaster_sound.mp3');
+        // Play the sound
+        badToasterSound.play();
+    }
 
-	function swap_image() {
-		if (img_state == 1){
-		document.getElementById("img").src = "https://www.smeg.com/binaries/content/gallery/smeg/categories/tsf02crus_2-_web.jpg/tsf02crus_2-_web.jpg/brx%3AsquareMobile";
-		img_state = 0;
 
-	}
-	else{
-		document.getElementById("img1").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Boeing_737-400_Centralwings.JPG/800px-Boeing_737-400_Centralwings.JPG?20220202162821";
-		img_state = 1;
+
 
 </body>
 </html>
