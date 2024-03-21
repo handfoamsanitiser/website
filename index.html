@@ -1,62 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Big Brain Small Budget</title>
-		<title>Patryk's Site</title>
-	<!-- css -->
-	<style type="text/css">
-
-		h1{
-			text-align:center ;
-			color:white ;
-			background-color:cornflowerblue ;
-		}
-		h2{
-			text-align:center ;
-			color:white ;
-			background-color:cornflowerblue ;
-
-		}
-		h3{
-			text-align:center ;
-			color:white ;
-			background-color:cornflowerblue ;
-			}
-		
-		#myImage {
-  			display: block;
-  			margin-left: auto;
- 		 	margin-right: auto;		
-			 width: 50%;
-	</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Big Brain Small Budget</title>
+    <!-- css -->
+    <style type="text/css">
+        h1 {
+            text-align: center;
+            color: white;
+            background-color: cornflowerblue;
+        }
+        h2 {
+            text-align: center;
+            color: white;
+            background-color: cornflowerblue;
+        }
+        h3 {
+            text-align: center;
+            color: white;
+            background-color: cornflowerblue;
+        }
+        #myImage {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
 </head>
 <body>
-<h1>Welcome to Big Brain Small Budget
-</h1>
+<h1>Welcome to Big Brain Small Budget</h1>
 <br>
-<h2>We are the leading supplier in affordable systems for your home automation setup.
-</h2>
+<h2>We are the leading supplier in affordable systems for your home automation setup.</h2>
 <h3>OUR PRODUCTS!</h3>
 <img id="myImage" onclick="swap_image()" src="ad1.png">
 <button onclick="document.getElementById('myImage').src='ad1.png'">Nice toaster</button>
-<button onclick="document.getElementById('myImage').src='ad2.png'">Bad toaster</button>
-<button onclick="document.getElementById('myImage').src='ad3.png'">The worlds smartest vacuum</button>
-
+<button onclick="playBadToasterSound(); document.getElementById('myImage').src='ad2.png'">Bad toaster</button>
+<button onclick="document.getElementById('myImage').src='ad3.png'">The world's smartest vacuum</button>
 
 <!-- JS -->
 <script type="text/javascript">
-	    // Function to play the bad toaster sound
+    // Function to play the bad toaster sound
     function playBadToasterSound() {
         // Create an Audio object for the sound
         var badToasterSound = new Audio('path/to/bad_toaster_sound.mp3');
         // Play the sound
         badToasterSound.play();
     }
-
-
-
-
+</script>
 </body>
 </html>
