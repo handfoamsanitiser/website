@@ -6,36 +6,54 @@
     <title>Big Brain Small Budget</title>
     <!-- css -->
     <style type="text/css">
-        div{
+        div {
         text-align: center;
-          }
+        }
         
         h1 {
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
         }
+
         h2 {
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
         }
+
         h3 {
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
         }
+
         #myImage {
             display: block;
             margin-left: auto;
             margin-right: auto;
             width: 50%;
-            
         }
+
         #appDemo {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
-            
-        }        
+            width: 50%;  
+        }
+
+        .changeItem {
+        	border-width: 3px;
+        	border-radius: 5px;
+
+        	font-size: 20px;
+
+        	margin: 10px;
+
+        }
+
+        #download {
+        	font-size: 30px;
+        	font-family: Arial, Helvetica, sans-serif;
+        }
+
     </style>
 </head>
 <body>
@@ -45,24 +63,25 @@
 <h3>OUR PRODUCTS!</h3>
 <img id="myImage" onclick="swap_image()" src="ad1.png">
     <div>
-<button onclick="document.getElementById('myImage').src='ad1.png'">Nice toaster</button>
-<button onclick="playDiscountsound(); document.getElementById('myImage').src='ad2.png'">Big Clock timer</button>
-<button onclick="document.getElementById('myImage').src='ad3.png'">The world's smartest vacuum</button>
+		<button class="changeItem" onclick="document.getElementById('myImage').src='ad1.png'">Nice toaster</button>
+		<button class="changeItem" onclick="playDiscountSound(); document.getElementById('myImage').src='ad2.png'">Big Clock timer</button>
+		<button class="changeItem" onclick="document.getElementById('myImage').src='ad3.png'">The world's smartest vacuum</button>
         </div>
     <br>
     <br>
      <img src="order ad.png" alt="But How Do I Order?" class="center"> 
     <h1>Ordering is made simple with our state of the art calculator!</h1>
      <img id="appDemo" src="orderdemo.png" alt="Screenshot of Aplicaton">
-     <a href="https://github.com/Big-Brain-Small-Budget/calculator/blob/main/calculator.py">Download Today!</a> 
+     <a id="download" href="https://github.com/Big-Brain-Small-Budget/calculator/blob/main/calculator.py">Download Today!</a> 
     
 
 <!-- JS -->
 <script type="text/javascript">
-    function playDiscountsound() {
+    function playDiscountSound() {
         var discountSound = new Audio('free.mp3');
         discountSound.play();
     }
 </script>
 </body>
 </html>
+
