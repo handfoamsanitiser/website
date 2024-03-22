@@ -6,6 +6,10 @@
     <title>Big Brain Small Budget</title>
     <!-- css -->
     <style type="text/css">
+        div{
+        text-align: center;
+          }
+        
         h1 {
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
@@ -23,6 +27,7 @@
             margin-left: auto;
             margin-right: auto;
             width: 50%;
+            
         }
     </style>
 </head>
@@ -32,9 +37,11 @@
 <h2>We are the leading supplier in affordable systems for your home automation setup.</h2>
 <h3>OUR PRODUCTS!</h3>
 <img id="myImage" onclick="swap_image()" src="ad1.png">
+    <div>
 <button onclick="document.getElementById('myImage').src='ad1.png'">Nice toaster</button>
 <button onclick="playDiscountsound(); document.getElementById('myImage').src='ad2.png'">Big Clock timer</button>
 <button onclick="document.getElementById('myImage').src='ad3.png'">The world's smartest vacuum</button>
+        </div>
 
 <!-- JS -->
 <script type="text/javascript">
